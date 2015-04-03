@@ -1,0 +1,48 @@
+/* CATHLEEN CARBONELL FWF 0415 */
+
+body {
+	background: #eee;
+}
+
+.container {
+	background: #fff;
+	padding-bottom: 50px;
+}
+
+/* FLOATS */
+
+.left {
+	float: left;
+	
+}
+
+.right {
+	float: right;
+	
+}
+
+.clear {
+	clear: both;
+}
+
+.form-control {
+	width: 85%;
+}
+
+/* ITEMS */
+
+.items ul {
+	list-style: none;
+	
+}
+
+.items li {
+	list-style: none;
+}
+
+/* BTN */
+.btn-clear {
+	color: #7d0d12;
+	background: none;
+	border: 0;
+}
