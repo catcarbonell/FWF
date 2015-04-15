@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- CATHLEEN CARBONELL FWF 0415 -->
+
+<html lang="en" ng-app="gList">
+<head>
+	<script src="js/angular.js"></script>
+	<script src="js/glist.js"></script>
+
+	<meta charset="UTF-8">
+	<title>Test Grocery List</title>
+	
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	
+
+</head>
+
+<body ng-controller="main">
+	<div class="container">
+	    
+	    <h1>Grocery List</h1>
+	    
+	    <input type="text" class="form-control left" placeholder="Add an item" ng-model="gitem">
+	    
+	    <button class="btn btn-success" ng-click="addToList()"><span class="glyphicon glyphicon-plus-sign"></span></button>
+	    
+	    <div class="clear">{{feedback}}&nbsp;</div>
+
+	    <div ng-repeat="gitem in list track by $index">
+	      <span><h4 class="left clear">{{gitem}}</h4><button class="left btn btn-clear" ng-click="remove($index)"><span class="glyphicon glyphicon-remove-circle"></span></button></span>
+
+	    </div>
+</div>
+</body>
+
+</html>
